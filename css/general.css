@@ -1,0 +1,235 @@
+/* Importeer je Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=[jouw-font]&display=swap');
+
+:root {
+  --bg-white: #ffffff;
+  --bg-light: #f8f9fa;
+  --bg-soft: #f1f3f4;
+  --text-dark: #2c3e50;
+  --text-medium: #5d6d7e;
+  --text-light: #85929e;
+  --btn-primary: #1a5276;
+  --btn-secondary: #d35400;
+  --font-headings: "Open Sans", sans-serif;
+  --font-body: "Merriweather", serif;
+}
+
+/* ===========================
+   Base Styles (Mobile First)
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* ===========================
+   Header (Mobile)
+   =========================== */
+header {
+  background: var(--bg-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-container img {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--btn-primary);
+}
+
+/* ===========================
+   Main Content (Mobile)
+   =========================== */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   Footer (Mobile)
+   =========================== */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px 15px;
+  background: var(--bg-white);
+  color: var(--text-medium);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Buttons (Mobile)
+   =========================== */
+button {
+  font-family: var(--font-headings);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===========================
+   Links
+   =========================== */
+a {
+  color: var(--btn-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--btn-secondary);
+}
+
+/* ===========================
+   Responsive (Tablet: ≥600px)
+   =========================== */
+@media (min-width: 600px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .header-container img {
+    width: 70px;
+    height: 70px;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding: 25px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ===========================
+   Responsive (Desktop: ≥900px)
+   =========================== */
+@media (min-width: 900px) {
+  .header-container {
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+  }
+
+  .header-container img {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav a {
+    font-size: 1.05rem;
+  }
+
+  main {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+}

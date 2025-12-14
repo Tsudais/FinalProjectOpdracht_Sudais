@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - De Katten Boutique</title>
+    <link rel="stylesheet" href="/css/shop.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="assets/logo.png"
+          alt="De Katten Boutique Logo"
+          width="80"
+          height="80"
+        />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="shop-layout">
+        <div class="sidebar">
+          <aside class="verlanglijst">
+            <h3>Verlanglijst</h3>
+            <div class="wishlist-items">
+              <p class="empty-message">Je verlanglijst is leeg</p>
+            </div>
+            <div class="total-price" style="display: none">
+              Totaal: €<span id="wishlist-total">0.00</span>
+            </div>
+          </aside>
+
+          <aside class="winkelmandje">
+            <h3>Winkelmandje</h3>
+            <div class="cart-items">
+              <p class="empty-message">Je winkelmandje is leeg</p>
+            </div>
+            <div class="total-price" style="display: none">
+              Totaal: €<span id="cart-total">0.00</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <h2>Alle Producten</h2>
+      <div class="producten-container" id="products-container"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 De Katten Boutique Alle rechten voorbehouden.</p>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>
