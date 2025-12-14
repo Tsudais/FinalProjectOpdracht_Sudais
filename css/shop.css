@@ -21,15 +21,12 @@
   padding-bottom: 60px; 
 }
 
-.product:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
+
 
 .product-figuur {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; 
   border-radius: 12px 12px 0 0; 
 }
 
@@ -84,7 +81,7 @@
 }
 
 .add-to-cart {
- position: absolute;
+  position: absolute;
   bottom: 12px;
   left: 16px;
   right: 16px;
@@ -103,6 +100,8 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   z-index: 5;
 }
+
+
 
 .add-to-cart:hover {
   background: #15425e;
@@ -230,5 +229,3 @@
     height: 60px;
   }
 }
-
-
