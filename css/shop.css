@@ -8,9 +8,7 @@
   --font-body: "Merriweather", serif;
 }
 
-/* ===========================
-   Product card container
-   =========================== */
+
 .product {
   position: relative;
   background: var(--bg-white);
@@ -20,21 +18,19 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  padding-bottom: 60px; /* ruimte voor knop */
+  padding-bottom: 60px; 
 }
 
-/* Hover effect */
 .product:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Product afbeelding */
 .product-figuur {
   position: relative;
   width: 100%;
-  overflow: hidden; /* ← BELANGRIJK: zorgt dat hartje binnen blijft */
-  border-radius: 12px 12px 0 0; /* afgeronde bovenkant */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0; 
 }
 
 .product-figuur img {
@@ -44,7 +40,6 @@
   object-fit: cover;
 }
 
-/* Wishlist hartje */
 .add-to-wishlist {
   position: absolute;
   top: 12px;
@@ -73,7 +68,6 @@
   transform: scale(1.1);
 }
 
-/* Product titel en prijs */
 .product-title {
   font-family: var(--font-headings);
   font-size: 1rem;
@@ -82,21 +76,20 @@
 }
 
 .product-price {
-  font-size: 1.3rem; /* groter dan 0.95rem */
-  font-weight: 700; /* dikker */
-  color: var(--btn-primary); /* blauw in plaats van text-dark */
+  font-size: 1.3rem; 
+  font-weight: 700; 
+  color: var(--btn-primary); 
   margin: 0.75rem 16px;
-  font-family: var(--font-headings); /* gebruik heading font */
+  font-family: var(--font-headings); 
 }
 
-/* Voeg toe aan winkelmand knop */
 .add-to-cart {
   position: absolute;
   bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 32px);
-  max-width: 350px; /* ← VOEG DEZE REGEL TOE */
+  max-width: 350px; 
   background: var(--btn-primary);
   color: white;
   border: none;
@@ -115,18 +108,14 @@
   background: #15425e;
 }
 
-/* ===========================
-   Producten container
-   =========================== */
+
 .producten-container {
   display: grid;
-  gap: 20px; /* ruimte tussen producten */
-  grid-template-columns: 1fr; /* standaard 1 product per rij */
+  gap: 20px; 
+  grid-template-columns: 1fr; 
 }
 
-/* ===========================
-   Responsive (Tablet)
-   =========================== */
+
 @media (min-width: 600px) {
   .product-title {
     font-size: 1.2rem;
@@ -149,9 +138,7 @@
   }
 }
 
-/* ===========================
-   Responsive (Desktop)
-   =========================== */
+
 @media (min-width: 900px) {
   .product {
     padding-bottom: 70px;
@@ -177,15 +164,12 @@
     font-size: 1.5rem;
   }
 
-  /* Desktop: 2 producten per rij */
   .producten-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ===========================
-   Cart & Wishlist Items
-   =========================== */
+
 .cart-item,
 .wishlist-item {
   display: flex;
@@ -231,9 +215,7 @@
   opacity: 1;
 }
 
-/* ===========================
-   Responsive (Tablet)
-   =========================== */
+
 @media (min-width: 600px) {
   .item-image {
     width: 55px;
@@ -241,12 +223,11 @@
   }
 }
 
-/* ===========================
-   Responsive (Desktop)
-   =========================== */
+
 @media (min-width: 900px) {
   .item-image {
     width: 60px;
     height: 60px;
   }
 }
+
